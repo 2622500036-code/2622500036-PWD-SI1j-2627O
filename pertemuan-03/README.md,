@@ -28,7 +28,7 @@ menyalin `index.html` dan  `img/foto-profil.jpg` ke `pertemuan-3` .
 - Galat yang ditemukan: [typo saat menulis nama class=from-grup dan kurang memakai id about]
  - Penyebab galat: [tidak menggunakan id about di rangka html jadinya css saya tidak berjalan ] 
  - Perbaikan yang dilakukan: [menambahkan id about dan memperbaiki kesalahan] 
- - Hasil pengujian ulang:[berhasil setelah di uji]
+ - Hasil pengujian ulang:[berhasil setelah di uji].
 
  ## GitHub pages
 
