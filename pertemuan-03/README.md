@@ -32,4 +32,4 @@ menyalin `index.html` dan  `img/foto-profil.jpg` ke `pertemuan-3` .
 
  ## GitHub pages
 
- URL: https://2622500036-code.github.io/2622500036-PWD-SI1j-2627O/
+ URL: https://2622500036-code.github.io/2622500036-PWD-SI1j-2627O/pertemuan-03
