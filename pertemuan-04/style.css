@@ -202,19 +202,44 @@
            text-decoration: none; 
         } 
         main {
-          display: grid;
+           display: grid;
         }
         main {
-          display: grid;
-          grid-template-columns: 1fr;
+           display: grid;
+           grid-template-columns: 1fr;
         }
         main {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
+           display: grid;
+           grid-template-columns: 1fr 1fr;
         }
         main { 
            display: grid; 
            grid-template-columns: 1fr 1fr; 
+           gap: 16px; 
+        } 
+        #contact { 
+           grid-column: 1 / -1; 
+        }
+        main { 
+           display: grid; 
+           grid-template-columns: 1fr 1fr; 
+           gap: 16px;
+        }
+        main { 
+           display: grid; 
+           grid-template-columns: 1fr; 
+           gap: 16px; 
+        } 
+        @media (min-width: 768px) { 
+           /* aturan CSS untuk viewport dengan lebar minimal 768px */ 
+          main { 
+            grid-template-columns: 1fr 1fr; 
+          } 
+        } 
+        nav ul { 
+           flex-direction: row; 
+           justify-content: flex-start; 
+           align-items: center; 
            gap: 16px; 
         } 
         #contact { 
