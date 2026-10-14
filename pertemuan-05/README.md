@@ -9,3 +9,5 @@ hasil aktual; code ini ("script.js berhasil dijalankan."); berhasil masuk di (co
 galat tidak ada
 F. Document Object Model (DOM)
 menjalankan halaman masih sama tapi awalnya saya coba menjalannkan nya java script tidak mengetahuinya dan nilai nya null setelah itu di index.html saya perbarui saya tambahkan di bagian <ul> nya dengan ini <ul id navMenu> dan saya coba jalankan di concole dan bisa setelah itu saya coba masukin yg id=contactform nilainya null setelah saya masukin di elemen form bisa.
+F.3. Memilih Elemen dengan querySelector()
+perubahan munculnya di concole saat saya menjalankan document.querySelector('input[name="jenis_pesan"]:checked');nilai (saran) saat saya klik saran .
