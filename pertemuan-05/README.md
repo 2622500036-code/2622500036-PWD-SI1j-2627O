@@ -1,4 +1,4 @@
-• tujuan penyiapan baseline P5; menyalin pwrtemuan 4 ke pertemuan-05 untuk di jadikan patokan java skrip.
+E. Penyisipan JavaScript pada Dokumen HTML• tujuan penyiapan baseline P5; menyalin pwrtemuan 4 ke pertemuan-05 untuk di jadikan patokan java skrip.
 • struktur berkas yang telah disiapkan; img ,poto-profil.jpg ,index.html ,style.css
 • cara menjalankan halaman; index.html lalu klik kanan open in integrated browser.
 • pemeriksaan yang dilakukan dan hasil aktualnya; hasil nya tampilan html , css serta gambar 
@@ -7,3 +7,5 @@ menjalankan halaman nya ;ke file html pertemuan -05 masuk ke halaman.
 pengujian nya; tag penutup </body> di index.html masukan code <script src="script.js"></script> kemudian ke file pertemuan -05 klik file script.js dan masukan kode console.log("script.js berhasil dijalankan."); 
 hasil aktual; code ini ("script.js berhasil dijalankan."); berhasil masuk di (console) dan setelah saya hapus kode ini  ("script.js berhasil dijalankan.");  tidak muncul di (console).
 galat tidak ada
+F. Document Object Model (DOM)
+menjalankan halaman masih sama tapi awalnya saya coba menjalannkan nya java script tidak mengetahuinya dan nilai nya null setelah itu di index.html saya perbarui saya tambahkan di bagian <ul> nya dengan ini <ul id navMenu> dan saya coba jalankan di concole dan bisa setelah itu saya coba masukin yg id=contactform nilainya null setelah saya masukin di elemen form bisa.
