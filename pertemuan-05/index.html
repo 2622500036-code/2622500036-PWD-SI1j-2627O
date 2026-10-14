@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa</title>
+    <link rel="stylesheet" href="style.css" />
+</head> 
+<body>
+    <header>
+      <h1>Profil Mahasiswa</h1>
+      <nav>
+          <ul>
+             <li><a href="#home">Beranda</a></li>
+             <li><a href="#about">Tentang</a></li>
+             <li><a href="#contact">Kontak</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Selamat Datang</h2>
+            <p>Halo,Saya Maulana Firdaus. Saya sedang mempelajari Pemerogaman Web Dasar</p>
+            <img src="img/poto-profil.jpg" height="180" width="190" alt="foto-profil">
+        </section>
+        <section id="about">
+            <h2>Tentang Saya</h2>
+            <article>
+                <h3>Profil Singkat</h3>
+                <p>Saya mahasiswa Program Study Sistem Informasi</p>
+                <h3>Target Belajar</h3>
+                <ol>
+                    <li>Mampu Menganalisis Data Secara Objektif</li>
+                    <li>Mengolah Dan Memanfaatkan Basis Data</li>
+                    <li>Menghubungkan Basis Dan Teknologi</li>
+                </ol>
+            </article>
+        </section>
+        <section id="contact">
+            <h2>Kontak</h2>
+            <P>Kunjungi <a href="https://github.com/2622500036-code/2622500036-PWD-SI1j-2627O.git">profil GitHub saya</a>.</P>
+            <form action="index.html" method="post">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label><br>
+                    <input class="input-form" type="texs" id="nama" name="nama"
+                    placeholder="Masukkan nama lengkap" minlength="3" maxlength="50" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label><br>
+                  <input class="input-from" type="email" id="email" name="email" placeholder="nama@email.com" required />
+                </div>
+                <div class="form-group">
+                   <label for="semester">Semester</label><br>
+                   <input class="input-from" type="number" id="semester" name="semester" min="1" max="14" required />
+                </div>
+                <div class="form-group">
+                    <label for="tanggal">Tanggal Kunjungan</label><br>
+                    <input class="input-form" type="date" id="tanggal" name="tanggal" required />
+                </div>
+                <div class="form-group">
+                    <p>Jenis Pesan</p>
+                    <input type="radio" id="pertanyaan" name="Jenis_pesan" value="pertanyaan" required />
+                    <label for="pertanyaan">pertanyaan</label>
+                    <input type="radio" id="saran" name="Jenis_pesan" value="saran" />
+                    <label for="saran">Saran</label>
+                </div>
+                <div class="form-group">
+                    <p>Topik yang Diminati</p>
+                    <input type="checkbox" id="minat-html" name="minat" value="HTML" />
+                    <label for="minat-html">HTML</label>
+                    <input type="checkbox" id="minat-css" name="minat" value="CSS" />
+                    <label for="minat-css">CSS</label>
+                </div>
+                <div class="form-group">
+                  <label for="prodi">Program Studi</label><br>
+                   <select class="input-form" id="prodi" name="prodi" required>
+                       <option value="">-- Pilih Program Studi --</option>>
+                       <option value="SI">Sistem Informasi</option>
+                       <option value="TI">Teknik Informatika</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="pesan">Pesan</label><br>
+                    <textarea class="input-form" id="pesan" name="pesan" maxlength="300" placeholder="Tulis pesan anda" required>
+                    </textarea>
+                </div>
+                <button type="submit">Kirim</button>
+                <button type="reset">Batal</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <P>&copy; 2026 Maulana Firdaus [2622500036]</P>
+    </footer>
+</body>
+</html>
