@@ -23,3 +23,6 @@ console.log("Tombol navigasi diklik.");
 () => { 
 console.log("Tombol navigasi diklik."); 
 }; 
+contactForm.addEventListener("submit", (event) => { 
+console.log("Form dikirim."); 
+}); 

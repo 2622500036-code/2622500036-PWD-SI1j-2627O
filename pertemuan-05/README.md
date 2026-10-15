@@ -29,5 +29,7 @@ length
 NodeList)
 F.5. Membaca Nilai Masukan dengan value 
 uji berhasil kode bisa di baca dan diolah oleh java skript
-G. Penanganan Peristiwa dengan Event Listener
+G. Penanganan Peristiwa dengan Event Listener.
 awalnya eror setelah saya hapus navTogle.  ahirnya bisa seteh saya klik muncul di console tombol navigasi diclik
+G.4. Event submit.
+hasil console muncul form dikirim setelah saya tekan kirirm
