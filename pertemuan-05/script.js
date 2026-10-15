@@ -42,3 +42,11 @@ contactForm.addEventListener("submit", (event) => {
 event.preventDefault(); 
 // Proses validasi formulir. 
 }); 
+ document.getElementById("navToggle"); 
+ document.getElementById("navMenu"); 
+ navToggle.addEventListener("click", () => { 
+console.log("Tombol navigasi diklik."); 
+}); 
+() => { 
+console.log("Tombol navigasi diklik."); 
+} 
