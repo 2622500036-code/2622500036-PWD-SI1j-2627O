@@ -11,3 +11,19 @@ F. Document Object Model (DOM)
 menjalankan halaman masih sama tapi awalnya saya coba menjalannkan nya java script tidak mengetahuinya dan nilai nya null setelah itu di index.html saya perbarui saya tambahkan di bagian <ul> nya dengan ini <ul id navMenu> dan saya coba jalankan di concole dan bisa setelah itu saya coba masukin yg id=contactform nilainya null setelah saya masukin di elemen form bisa.
 F.3. Memilih Elemen dengan querySelector()
 perubahan munculnya di concole saat saya menjalankan document.querySelector('input[name="jenis_pesan"]:checked');nilai (saran) saat saya klik saran .
+F.4. Memilih Beberapa Elemen dengan querySelectorAll() 
+cara menjalankan halaman mengunakan live server langkah pengujian memasukan berkas skript.js(const topikDipilih = document.querySelectorAll('input[name="minat"]:checked');)dan(if (topikDipilih.length === 0) { 
+// Proses validasi ketika belum ada topik yang dipilih. 
+} ) setelah itu pilih topix yang diminati masuk ke concole kemudian ketik ini(document.querySelectorAll('input[name="minat"]:checked');) setelah itu muncul (NodeList(2) [input#minat-html, input#minat-css]
+0
+: 
+input#minat-html
+1
+: 
+input#minat-css
+length
+: 
+2
+[[Prototype]]
+: 
+NodeList)
