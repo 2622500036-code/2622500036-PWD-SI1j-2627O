@@ -15,3 +15,5 @@ const emailInput = document.getElementById("email");
 const semesterInput = document.getElementById("semester"); 
 const email = emailInput.value; 
 const semester = semesterInput.value; 
+const formFeedback = document.getElementById("formFeedback");
+const isOpen = navMenu.classList.toggle("nav-open"); 
