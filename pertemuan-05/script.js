@@ -26,3 +26,19 @@ console.log("Tombol navigasi diklik.");
 contactForm.addEventListener("submit", (event) => { 
 console.log("Form dikirim."); 
 }); 
+contactForm.addEventListener("input", () => { 
+formFeedback.textContent = ""; 
+});
+contactForm.addEventListener("reset", () => { 
+formFeedback.textContent = ""; 
+});
+contactForm.addEventListener("submit", (event) => { 
+console.log(event); 
+}); 
+contactForm.addEventListener("submit", (event) => { 
+event.preventDefault(); 
+});
+contactForm.addEventListener("submit", (event) => { 
+event.preventDefault(); 
+// Proses validasi formulir. 
+}); 

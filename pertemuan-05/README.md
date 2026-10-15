@@ -33,3 +33,4 @@ G. Penanganan Peristiwa dengan Event Listener.
 awalnya eror setelah saya hapus navTogle.  ahirnya bisa seteh saya klik muncul di console tombol navigasi diclik
 G.4. Event submit.
 hasil console muncul form dikirim setelah saya tekan kirirm
+
