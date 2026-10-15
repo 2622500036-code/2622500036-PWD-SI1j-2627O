@@ -27,3 +27,5 @@ length
 [[Prototype]]
 : 
 NodeList)
+F.5. Membaca Nilai Masukan dengan value 
+uji berhasil kode bisa di baca dan diolah oleh java skript
