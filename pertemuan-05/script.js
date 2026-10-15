@@ -17,3 +17,9 @@ const email = emailInput.value;
 const semester = semesterInput.value; 
 const formFeedback = document.getElementById("formFeedback");
 const isOpen = navMenu.classList.toggle("nav-open"); 
+addEventListener("click", () => { 
+console.log("Tombol navigasi diklik."); 
+}); 
+() => { 
+console.log("Tombol navigasi diklik."); 
+}; 
