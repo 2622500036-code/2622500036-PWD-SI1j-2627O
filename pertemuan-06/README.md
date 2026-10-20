@@ -8,3 +8,14 @@ penggunaan komentar ,echo dan print sama aja ga ada yang beda keduan nya muncul 
 pengeluaran nya tetap sama cuma beda element aja.
 hasil pengujian teks ucapan selamat datang ,nama mahasiswa,matakuliah,tahun akademik.
 tautan git hub berhasil mengarah ke github saya .
+## Bagian E: Operator PHP
+
+### E.1 Operator Aritmetika dan Penugasan
+- **Deskripsi**: Menghitung sisa semester yang dapat ditempuh menggunakan operator pengurangan .
+- Kode yang Ditambahkan:
+  ```php
+  $batasSemester =2;
+  $sisaSemester = $batasSemester - $semester;
+  hasil pengujian profil singkat 
+  nilai sisa semester berhasil di tampil yaitu 1 (hasil dari 2-1).
+  
