@@ -6,4 +6,5 @@ alamat akses http://localhost/pertemuan-06 dan halaman web localhost berhasil di
 teks "PHP berhasil dijalankan." sudah tampil dibagian atas halaman website
 penggunaan komentar ,echo dan print sama aja ga ada yang beda keduan nya muncul di web.
 pengeluaran nya tetap sama cuma beda element aja.
-
+hasil pengujian teks ucapan selamat datang ,nama mahasiswa,matakuliah,tahun akademik.
+tautan git hub berhasil mengarah ke github saya .
