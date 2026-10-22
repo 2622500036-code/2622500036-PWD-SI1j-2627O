@@ -29,3 +29,9 @@ Target belajar ke-3: Menerapkan operator dan percabangan.
 Target belajar ke-4: Menggunakan perulangan for dan while.
 Target belajar ke-5: Belum dipetakan
 tampilan ini.
+H.1. Menampilkan IPK dengan 
+Fungsi 
+number_format() 
+nilai ipk saya ganti menjadi 4.00
+ number_format() untuk menambahkan angka tambahan di ipk saat saya ganti menjadi 3
+ 
