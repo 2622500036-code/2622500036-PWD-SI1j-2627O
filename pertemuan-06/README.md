@@ -18,4 +18,5 @@ tautan git hub berhasil mengarah ke github saya .
   $sisaSemester = $batasSemester - $semester;
   hasil pengujian profil singkat 
   nilai sisa semester berhasil di tampil yaitu 1 (hasil dari 2-1).
-  
+  F.3. Percabangan switch-case-default 
+  menjadi eror setelah saya ganti TI
