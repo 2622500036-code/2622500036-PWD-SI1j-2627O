@@ -5,7 +5,7 @@ $nim = "2622500036";
 $namaMahasiswa = "Maulana Firdaus"; 
 $programStudi = "SI"; 
 $tahunAkademik = "2026/2027"; 
-$semester = 2; 
+$semester = 1; 
 $ipk = 4.00; 
 $statusAktif = true; 
 $catatanTambahan = null; 
@@ -97,7 +97,8 @@ switch ($programStudi) {
                 <p>Sisa semester hingga batas: <?php echo $sisaSemester; ?></p>
                 <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p>
                 <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p>
-                <p>IPK: <?php echo number_format($ipk, 2, ',', '.'); ?></p> 
+                <p>IPK: <?php echo number_format($ipk, 2, ',', '.'); ?></p>
+                <p>Catatan tambahan: <?php echo $catatanTambahan === null ? "catatan praktik PHP" : $catatanTambahan; ?></p>  
                 <p>Saya mahasiswa Program Study Sistem Informasi</p>
                 <h3>Target Belajar (Perulangan for)</h3> 
                 <ol> 

@@ -34,4 +34,6 @@ Fungsi
 number_format() 
 nilai ipk saya ganti menjadi 4.00
  number_format() untuk menambahkan angka tambahan di ipk saat saya ganti menjadi 3
+ H.2. Memeriksa Nilai NULL
+ setelah saya ganti perubahan berhasil
  
