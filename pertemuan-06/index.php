@@ -145,10 +145,10 @@ switch ($programStudi) {
             <P>Kunjungi <a target="_blank" href="https://github.com/2622500036-code<?= PROFIL_GITHUB ?>">profil GitHub
                     saya</a>.
             </P>
-            <form id="contactForm" action="index.html" method="get" novalidate>
+            <form id="contactForm" action="index.php" method="get" novalidate>
                 <div class="form-group">
                     <label for="nama">Nama Lengkap</label><br>
-                    <input class="input-form" type="texs" id="nama" name="nama" placeholder="Masukkan nama lengkap"
+                    <input class="input-form" type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap"
                         minlength="3" maxlength="50" required />
                 </div>
                 <div class="form-group">
