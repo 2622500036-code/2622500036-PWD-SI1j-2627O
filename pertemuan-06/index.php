@@ -199,7 +199,7 @@ switch ($programStudi) {
         </section>
     </main>
     <footer>
-        <P>&copy; 2026 Maulana Firdaus [2622500036]</P>
+        <p>&copy; <?= date("Y") ?> <?php echo $namaMahasiswa; ?> [<?= $nim ?>]</p> 
     </footer>
     <script src="script.js"></script>
 </body>
