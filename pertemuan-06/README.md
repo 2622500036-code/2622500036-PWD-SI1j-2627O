@@ -20,3 +20,12 @@ tautan git hub berhasil mengarah ke github saya .
   nilai sisa semester berhasil di tampil yaitu 1 (hasil dari 2-1).
   F.3. Percabangan switch-case-default 
   menjadi eror setelah saya ganti TI
+  G.1. Perulangan for untuk Menampilkan Target Belajar 
+  cuma mengeluarkan tampilan aja
+  Target Belajar (Perulangan for)
+Target belajar ke-1: Memahami sintaks dasar PHP.
+Target belajar ke-2: Menggunakan variabel dan konstanta.
+Target belajar ke-3: Menerapkan operator dan percabangan.
+Target belajar ke-4: Menggunakan perulangan for dan while.
+Target belajar ke-5: Belum dipetakan
+tampilan ini.

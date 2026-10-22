@@ -98,12 +98,34 @@ switch ($programStudi) {
                 <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p>
                 <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p> 
                 <p>Saya mahasiswa Program Study Sistem Informasi</p>
-                <h3>Target Belajar</h3>
-                <ol>
-                    <li>Mampu Menganalisis Data Secara Objektif</li>
-                    <li>Mengolah Dan Memanfaatkan Basis Data</li>
-                    <li>Menghubungkan Basis Dan Teknologi</li>
-                </ol>
+                <h3>Target Belajar (Perulangan for)</h3> 
+                <ol> 
+                    <?php 
+                        // Perulangan for tanpa array; materi larik dibahas pada P9. 
+                        for ($i = 1; $i <= 5; $i++) { 
+                        echo "<li>Target belajar ke-" . $i . ": "; 
+                        switch ($i) { 
+                        case 1: 
+                        echo "Memahami sintaks dasar PHP."; 
+                        break; 
+                        case 2: 
+                        echo "Menggunakan variabel dan konstanta."; 
+                        break; 
+                        case 3: 
+                        echo "Menerapkan operator dan percabangan."; 
+                        break; 
+                        case 4: 
+                        echo "Menggunakan perulangan for dan while."; 
+                        break; 
+                        default: 
+                        echo "Belum dipetakan"; 
+                        break; 
+                        } 
+                        echo "</li>"; 
+                        } 
+                        ?> 
+                    </ol> 
+                
             </article>
         </section>
         <section id="contact">
