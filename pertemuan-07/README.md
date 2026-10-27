@@ -15,3 +15,4 @@ PHP menyediakan variabel superglobal
 $_POST
 PHP dapat membaca nilai nama dari 
 HTML.dan berhasil memunculkan nama saya
+E.4. Mengakses Data dari Berbagai Jenis Input Formulir

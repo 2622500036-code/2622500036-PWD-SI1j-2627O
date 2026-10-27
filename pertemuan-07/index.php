@@ -1,21 +1,27 @@
-
-<?php 
+<?php
 // P7: penggunaan POST 
-if (isset($_POST['nama'])) { 
-$nama = $_POST['nama']; 
-echo "Nama yang diterima: " . htmlspecialchars($nama, ENT_QUOTES, 'UTF-8'); 
-} 
+if (isset($_POST['nama'])) {
+    $nama = $_POST['nama'];
+    echo "Nama yang diterima: " . htmlspecialchars($nama, ENT_QUOTES, 'UTF-8');
+}
+$email = $_POST['email'] ?? '';
+$semesterForm = $_POST['semester'] ?? '';
+$tanggal = $_POST['tanggal'] ?? '';
+$jenisPesan = $_POST['jenis_pesan'] ?? '';
+$prodi = $_POST['prodi'] ?? '';
+$pesan = $_POST['pesan'] ?? '';
+$minat = $_POST['minat'] ?? []; 
 
 // P6: PHP dasar dan pemrograman sisi peladen 
 // Bagian 1: Variabel dan konstanta 
-$nim = "2622500036"; 
-$namaMahasiswa = "Maulana Firdaus"; 
-$programStudi = "SI"; 
-$tahunAkademik = "2026/2027"; 
-$semester = 1; 
-$ipk = 4.00; 
-$statusAktif = true; 
-$catatanTambahan = null; 
+$nim = "2622500036";
+$namaMahasiswa = "Maulana Firdaus";
+$programStudi = "SI";
+$tahunAkademik = "2026/2027";
+$semester = 1;
+$ipk = 4.00;
+$statusAktif = true;
+$catatanTambahan = null;
 
 // Deklarasi konstanta (D.2)
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
@@ -64,7 +70,7 @@ switch ($programStudi) {
 </head>
 
 <body>
-    
+
     <header>
         <div class="header-top">
             <h1>Profil Mahasiswa</h1>
@@ -85,19 +91,21 @@ switch ($programStudi) {
     <main>
         <section id="home">
             <h2>Selamat Datang</h2>
-            <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah 
-            <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; 
-            ?>.</p> 
-            
+            <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah
+                <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik;
+                                                                                        ?>.
+            </p>
+
             <p>Halo,Saya Maulana Firdaus. Saya sedang mempelajari Pemerogaman Web Dasar</p>
             <img src="img/foto.jpg" height="180" width="190" alt="foto-profil">
         </section>
         <section id="about">
-           <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; ?>.</p>
+            <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; ?>.</p>
             <article>
                 <h3>Profil Singkat</h3>
                 <p>Fokus program studi</p>
-                <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p><p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
+                <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
+                <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
                 <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p>
                 <p>Program Studi: <?php echo $namaProdi . " (" . $programStudi . ")"; ?></p>
                 <p>Status mahasiswa: <?php echo $statusAktif ? "Aktif" : "Tidak aktif"; ?></p>
@@ -105,46 +113,46 @@ switch ($programStudi) {
                 <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p>
                 <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p>
                 <p>IPK: <?php echo number_format($ipk, 2, ',', '.'); ?></p>
-                <p>Catatan tambahan: <?php echo $catatanTambahan === null ? "catatan praktik PHP" : $catatanTambahan; ?></p>  
+                <p>Catatan tambahan: <?php echo $catatanTambahan === null ? "catatan praktik PHP" : $catatanTambahan; ?></p>
                 <p>Saya mahasiswa Program Study Sistem Informasi</p>
-                <h3>Target Belajar (Perulangan for)</h3> 
-                <ol> 
-                    <?php 
-                        // Perulangan for tanpa array; materi larik dibahas pada P9. 
-                        for ($i = 1; $i <= 5; $i++) { 
-                        echo "<li>Target belajar ke-" . $i . ": "; 
-                        switch ($i) { 
-                        case 1: 
-                        echo "Memahami sintaks dasar PHP."; 
-                        break; 
-                        case 2: 
-                        echo "Menggunakan variabel dan konstanta."; 
-                        break; 
-                        case 3: 
-                        echo "Menerapkan operator dan percabangan."; 
-                        break; 
-                        case 4: 
-                        echo "Menggunakan perulangan for dan while."; 
-                        break; 
-                        default: 
-                        echo "Belum dipetakan"; 
-                        break; 
-                        } 
-                        echo "</li>"; 
-                        } 
-                        ?> 
-                    </ol>
-                    <h3>Semester (Perulangan while):</h3> 
-                    <ol> 
-                     <?php 
-                     $nomorSemester = 1; 
-                     while ($nomorSemester <= 3) { 
-                     echo "<li>Semester " . $nomorSemester . "</li>"; 
-                     $nomorSemester++; // operator penugasan 
-                     } 
-                        ?> 
-                    </ol>  
-                
+                <h3>Target Belajar (Perulangan for)</h3>
+                <ol>
+                    <?php
+                    // Perulangan for tanpa array; materi larik dibahas pada P9. 
+                    for ($i = 1; $i <= 5; $i++) {
+                        echo "<li>Target belajar ke-" . $i . ": ";
+                        switch ($i) {
+                            case 1:
+                                echo "Memahami sintaks dasar PHP.";
+                                break;
+                            case 2:
+                                echo "Menggunakan variabel dan konstanta.";
+                                break;
+                            case 3:
+                                echo "Menerapkan operator dan percabangan.";
+                                break;
+                            case 4:
+                                echo "Menggunakan perulangan for dan while.";
+                                break;
+                            default:
+                                echo "Belum dipetakan";
+                                break;
+                        }
+                        echo "</li>";
+                    }
+                    ?>
+                </ol>
+                <h3>Semester (Perulangan while):</h3>
+                <ol>
+                    <?php
+                    $nomorSemester = 1;
+                    while ($nomorSemester <= 3) {
+                        echo "<li>Semester " . $nomorSemester . "</li>";
+                        $nomorSemester++; // operator penugasan 
+                    }
+                    ?>
+                </ol>
+
             </article>
         </section>
         <section id="contact">
@@ -180,9 +188,10 @@ switch ($programStudi) {
                 </div>
                 <div class="form-group">
                     <p>Topik yang Diminati</p>
-                    <input type="checkbox" id="minat-html" name="minat" value="HTML" />
+                    <input type="checkbox" id="minat-html" name="minat[]" value="HTML" />
                     <label for="minat-html">HTML</label>
-                    <input type="checkbox" id="minat-css" name="minat" value="CSS" />
+
+                    <input type="checkbox" id="minat-css" name="minat[]" value="CSS" />
                     <label for="minat-css">CSS</label>
                 </div>
                 <div class="form-group">
@@ -206,7 +215,7 @@ switch ($programStudi) {
         </section>
     </main>
     <footer>
-        <p>&copy; <?= date("Y") ?> <?php echo $namaMahasiswa; ?> [<?= $nim ?>]</p> 
+        <p>&copy; <?= date("Y") ?> <?php echo $namaMahasiswa; ?> [<?= $nim ?>]</p>
     </footer>
     <script src="script.js"></script>
 </body>
