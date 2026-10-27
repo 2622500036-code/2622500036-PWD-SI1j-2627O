@@ -16,3 +16,13 @@ $_POST
 PHP dapat membaca nilai nama dari 
 HTML.dan berhasil memunculkan nama saya
 E.4. Mengakses Data dari Berbagai Jenis Input Formulir
+. 
+VALIDASI, NORMALISASI, DAN SANITASI DATA DI SISI PELADEN 
+langkah pengujian Kirim formulir tanpa mengisi apapun. Amati apakah pesan Nama lengkap wajib diisi. Email wajib 
+diisi. Semester wajib diisi. Tanggal kunjungan wajib diisi. Jenis pesan wajib dipilih. Program 
+studi wajib dipilih. Pesan wajib diisi. Minat wajib dipilih minimal satu. Jenis pesan tidak 
+valid. Program studi tidak valid. muncul. 
+si seluruh kolom wajib dengan data yang sesuai, tetapi masukkan nilai bukan-email pada kolom Email. 
+Periksa apakah pesan "Format email tidak valid. " ditampilkan.
+si seluruh kolom wajib dengan data yang sesuai, tetapi masukkan nilai bukan-email pada kolom Email. 
+Periksa apakah pesan "Format email tidak valid. " ditampilkan.muncul
