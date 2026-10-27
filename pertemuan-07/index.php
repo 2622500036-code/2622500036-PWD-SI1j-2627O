@@ -1,10 +1,10 @@
 
-<?php
-// P7: penggunaan GET 
-if (isset($_GET['nama'])) { 
-$nama = $_GET['nama']; 
+<?php 
+// P7: penggunaan POST 
+if (isset($_POST['nama'])) { 
+$nama = $_POST['nama']; 
 echo "Nama yang diterima: " . htmlspecialchars($nama, ENT_QUOTES, 'UTF-8'); 
-}
+} 
 
 // P6: PHP dasar dan pemrograman sisi peladen 
 // Bagian 1: Variabel dan konstanta 
