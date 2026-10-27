@@ -1,3 +1,4 @@
+
 <?php
 // P7: penggunaan GET 
 if (isset($_GET['nama'])) { 
@@ -51,8 +52,7 @@ switch ($programStudi) {
     default:
         $fokusProgramStudi = "Belum ditentukan";
 }
-?> 
-
+?>
 <!DOCTYPE html>
 <html lang="id">
 
@@ -155,6 +155,7 @@ switch ($programStudi) {
             <form id="contactForm" action="index.php" method="get" novalidate>
                 <div class="form-group">
                     <label for="nama">Nama Lengkap</label><br>
+            <form id="contactForm" action="indexGet.php" method="get" novalidate>
                     <input class="input-form" type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap"
                         minlength="3" maxlength="50" required />
                 </div>
