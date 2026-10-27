@@ -26,3 +26,6 @@ si seluruh kolom wajib dengan data yang sesuai, tetapi masukkan nilai bukan-emai
 Periksa apakah pesan "Format email tidak valid. " ditampilkan.
 si seluruh kolom wajib dengan data yang sesuai, tetapi masukkan nilai bukan-email pada kolom Email. 
 Periksa apakah pesan "Format email tidak valid. " ditampilkan.muncul
+ 
+Tahap 2 - Menampilkan data yang diterima melalui POST 
+hasil aktual data muncul
