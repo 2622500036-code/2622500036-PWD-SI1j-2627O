@@ -1,17 +1,21 @@
 <?php
+session_start();
 // P7: penggunaan POST 
+$nama = trim((string) ($_POST['nama'] ?? ''));
+$email = trim((string) ($_POST['email'] ?? ''));
+$semesterForm = trim((string) ($_POST['semester'] ?? ''));
+$jenisPesan = trim((string) ($_POST['jenis_pesan'] ?? ''));
+$prodi = trim((string) ($_POST['prodi'] ?? ''));
+$pesan = trim((string) ($_POST['pesan'] ?? ''));
+$tanggal = trim((string) ($_POST['tanggal'] ?? ''));
+$minat = $_POST['minat'] ?? [];
+
 if (isset($_POST['nama'])) {
     $nama = $_POST['nama'];
     echo "Nama yang diterima: " . htmlspecialchars($nama, ENT_QUOTES, 'UTF-8');
 }
-$email = $_POST['email'] ?? '';
-$semesterForm = $_POST['semester'] ?? '';
-$tanggal = $_POST['tanggal'] ?? '';
-$jenisPesan = $_POST['jenis_pesan'] ?? '';
-$prodi = $_POST['prodi'] ?? '';
-$pesan = $_POST['pesan'] ?? '';
-$minat = $_POST['minat'] ?? [];
 $pesanKesalahan = '';
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (trim($nama ?? '') === '') {
         $pesanKesalahan .= 'Nama lengkap wajib diisi. ';
@@ -78,20 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         }
     }
-    $nama = trim((string) ($_POST['nama'] ?? ''));
-    $email = trim((string) ($_POST['email'] ?? ''));
-    $semesterForm = trim((string) ($_POST['semester'] ?? ''));
-    $jenisPesan = trim((string) ($_POST['jenis_pesan'] ?? ''));
-    $prodi = trim((string) ($_POST['prodi'] ?? ''));
-    $pesan = trim((string) ($_POST['pesan'] ?? ''));
-    $tanggal = trim((string) ($_POST['tanggal'] ?? ''));
-    $minat = $_POST['minat'] ?? [];
 }
-if (isset($_POST['nama'])) {
-    $nama = $_POST['nama'];
-    echo "Nama yang diterima: " . htmlspecialchars($nama, ENT_QUOTES, 'UTF-8');
-}
-
 // P6: PHP dasar dan pemrograman sisi peladen 
 // Bagian 1: Variabel dan konstanta 
 $nim = "2622500036";
@@ -138,6 +129,31 @@ switch ($programStudi) {
     default:
         $fokusProgramStudi = "Belum ditentukan";
 }
+// P7 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $_SESSION['pesanKesalahan'] = $pesanKesalahan;
+
+    $_SESSION['nama'] = $nama;
+    $_SESSION['email'] = $email;
+    $_SESSION['semester'] = $semesterForm;
+    $_SESSION['tanggal'] = $tanggal;
+    $_SESSION['jenis_pesan'] = $jenisPesan;
+    $_SESSION['prodi'] = $prodi;
+    $_SESSION['minat'] = $minat;
+    $_SESSION['pesan'] = $pesan;
+
+    header('Location: index.php');
+    exit;
+}
+$pesanKesalahan = $_SESSION['pesanKesalahan'] ?? '';
+$nama = $_SESSION['nama'] ?? '';
+$email = $_SESSION['email'] ?? '';
+$semesterForm = $_SESSION['semester'] ?? '';
+$tanggal = $_SESSION['tanggal'] ?? date("Y-m-d");
+$jenisPesan = $_SESSION['jenis_pesan'] ?? '';
+$prodi = $_SESSION['prodi'] ?? '';
+$minat = $_SESSION['minat'] ?? '';
+$pesan = $_SESSION['pesan'] ?? '';
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -175,26 +191,20 @@ switch ($programStudi) {
                 <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik;
                                                                                         ?>.
             </p>
-
-            <p>Halo,Saya Maulana Firdaus. Saya sedang mempelajari Pemerogaman Web Dasar</p>
             <img src="img/foto.jpg" height="180" width="190" alt="foto-profil">
         </section>
         <section id="about">
-            <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; ?>.</p>
             <article>
                 <h3>Profil Singkat</h3>
-                <p>Fokus program studi</p>
-                <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
-                <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
-                <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p>
                 <p>Program Studi: <?php echo $namaProdi . " (" . $programStudi . ")"; ?></p>
+                <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p>
                 <p>Status mahasiswa: <?php echo $statusAktif ? "Aktif" : "Tidak aktif"; ?></p>
+                <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
                 <p>Sisa semester hingga batas: <?php echo $sisaSemester; ?></p>
                 <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p>
-                <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p>
+
                 <p>IPK: <?php echo number_format($ipk, 2, ',', '.'); ?></p>
                 <p>Catatan tambahan: <?php echo $catatanTambahan === null ? "catatan praktik PHP" : $catatanTambahan; ?></p>
-                <p>Saya mahasiswa Program Study Sistem Informasi</p>
                 <h3>Target Belajar (Perulangan for)</h3>
                 <ol>
                     <?php
@@ -297,7 +307,7 @@ switch ($programStudi) {
                 <button type="reset">Batal</button>
                 <p id="formFeedback"></p>
             </form>
-            <?php if ($_SERVER['REQUEST_METHOD'] === 'POST'): ?>
+            <?php if (!empty($nama)): ?>
                 <h3>Data yang Diterima Peladen</h3>
 
                 <p>Nama:
@@ -342,13 +352,12 @@ switch ($programStudi) {
 
                 <p><?= nl2br(htmlspecialchars($pesan, ENT_QUOTES, 'UTF-8')) ?></p>
             <?php endif; ?>
-
         </section>
     </main>
     <footer>
         <p>&copy; <?= date("Y") ?> <?php echo $namaMahasiswa; ?> [<?= $nim ?>]</p>
     </footer>
-    <script src="script.js"></script> -->
+    <script src="script.js"></script>
 </body>
 
 </html>

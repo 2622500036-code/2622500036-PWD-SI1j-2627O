@@ -26,9 +26,6 @@ $batasSemester = 8;
 $sisaSemester = $batasSemester - $semester;
 $semesterValid = ($semester >= 1) && ($semester <= $batasSemester);
 $statusSemester = ($semesterValid && $statusAktif) ? "Sesuai rentang" : "Perlu diperiksa";
-$semesterValid = ($semester >= 1) && ($semester <= $batasSemester);
-$statusSemester = ($semesterValid && $statusAktif) ? "Sesuai rentang" : "Perlu diperiksa";
-
 
 // Bagian 3: Percabangan if-elseif-else
 if ($semester < 3) {
@@ -88,25 +85,20 @@ switch ($programStudi) {
             <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah 
             <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; 
             ?>.</p> 
-            
-            <p>Halo,Saya Maulana Firdaus. Saya sedang mempelajari Pemerogaman Web Dasar</p>
             <img src="img/foto.jpg" height="180" width="190" alt="foto-profil">
         </section>
         <section id="about">
-           <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; ?>.</p>
             <article>
                 <h3>Profil Singkat</h3>
-                <p>Fokus program studi</p>
-                <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p><p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
-                <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p>
                 <p>Program Studi: <?php echo $namaProdi . " (" . $programStudi . ")"; ?></p>
+                <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p>
                 <p>Status mahasiswa: <?php echo $statusAktif ? "Aktif" : "Tidak aktif"; ?></p>
+                <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
                 <p>Sisa semester hingga batas: <?php echo $sisaSemester; ?></p>
                 <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p>
-                <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p>
+
                 <p>IPK: <?php echo number_format($ipk, 2, ',', '.'); ?></p>
-                <p>Catatan tambahan: <?php echo $catatanTambahan === null ? "catatan praktik PHP" : $catatanTambahan; ?></p>  
-                <p>Saya mahasiswa Program Study Sistem Informasi</p>
+                <p>Catatan tambahan: <?php echo $catatanTambahan === null ? "catatan praktik PHP" : $catatanTambahan; ?></p>
                 <h3>Target Belajar (Perulangan for)</h3> 
                 <ol> 
                     <?php 
