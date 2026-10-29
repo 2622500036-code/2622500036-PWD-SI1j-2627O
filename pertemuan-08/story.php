@@ -17,7 +17,7 @@
       <a href="story.html">Story</a>
       <a href="Profil.html">Profil</a>
       <a href="galeri.html">Galeri Hobi</a>
-      <a href="tentang-saya.html">Tentang Saya</a>
+      <a href="tentang.html">Tentang Saya</a>
     </nav>
 
     <main>
@@ -26,6 +26,7 @@
 
       <!-- Gambar saya -->
       <div class="galeri">
+        <div>Motivasi Tanpa Aksi Hanyalah Halusinasi</div>
         
       </div>
 
