@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -14,10 +15,10 @@
   <!-- navigasi -->
   <div class="menu">
     <nav>
-      <a href="story.html">Story</a>
-      <a href="Profil.html">Profil</a>
-      <a href="galeri.html">Galeri Hobi</a>
-      <a href="tentang.html">Tentang Saya</a>
+      <a href="index.php">Story</a>
+      <a href="Profil.php">Profil</a>
+      <a href="Galeri.php">Galeri Hobi</a>
+      <a href="Tentang.php">Tentang Saya</a>
     </nav>
 
     <main>

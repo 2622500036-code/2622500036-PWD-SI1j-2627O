@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!-- header web -->
-     <header>
+    <header>
         <h1>Galeri Hobi</h1>
     </header>
     <!-- menu -->
-     <div class="menu">
+    <div class="menu">
         <nav>
             <ul>
-                <li><a href="story.html">Story</a></li>
-                <li><a href="profil.html">Profil</a></li>
-                <li><a href="galeri.html">Galeri Hobi</a></li>
-                <li><a href="tentang.html">Tentang saya</a></li>
+                <a href="index.php">Story</a>
+                <a href="Profil.php">Profil</a>
+                <a href="Galeri.php">Galeri Hobi</a>
+                <a href="Tentang.php">Tentang Saya</a>
             </ul>
         </nav>
         <!-- galeri utama -->
-         <main>
+        <main>
             <div class="galeri">
                 <h2>Galeri Hobi</h2>
                 <p>Berikut adalah beberapa gambar yang menggambarkan hobi saya:</p>
@@ -53,8 +55,12 @@
                     <h3> Bulu Tangkis</h3>
                     <img src="gambar/bulutangkis.jpg" alt="Bulu Tangkis" width="300">
                     <p>Bulu tangkis adalah olahraga yang menyenangkan dan membantu menjaga kebugaran tubuh. Saya suka bermain bulu tangkis karena membuat saya merasa lebih fokus dan lincah.🏸🏸</p>
-                
-            </div>
-         </main>
+
+                </div>
+        </main>
+        <footer>
+            <P>&copy; 2026 Maulana Firdaus [2622500036]</P>
+        </footer>
 </body>
+
 </html>
