@@ -1,0 +1,187 @@
+/* pengaturan dasar halaman */
+body {
+    font-family: "segoe UI", Tahoma,Geneva,
+    Verdana,
+    sans-serif;
+    margin: 0%;
+    padding: 00;
+   background-color: #cff9e8;
+    color: #451010;
+    width: 100%;
+}
+
+/* header website */
+header {
+    background: linear-gradient(135deg, #0285cb, #03ffd5);
+    color: #fef5f5;
+    text-align: center;
+    padding: 1%;
+    font-size: 35px;
+    font-style: italic;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 100%;
+     
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 1px;
+   
+   
+}
+
+/* bagian navigasi */
+.menu{
+    width: 100%;
+    max-width:300px;
+    margin: 20px o;
+    background: linear-gradient(135deg, #0285cb, #03ffd5);
+    padding: 50px;
+    border-radius: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+   
+}
+
+.menu nav {
+    display: flex;
+    flex-direction: column; gap: 10px;
+    
+    
+}
+
+.menu nav a {
+    text-decoration:none;
+    color: #fffcfc;
+    font-weight: bold;
+    font-size: 26px;
+    padding: 30px 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 900px;
+  
+
+
+}
+
+.menu nav a:hover {
+   background-color: #04ffff;
+    color: #000000;
+    transform: translateX(10px);
+    /* efek geser ke kanan */
+}
+/* Membuat menu dan konten berjejer secara horizontal (ke samping) */
+.main-layout {
+    display: flex;
+    gap: 15px; /* Jarak antara menu sebelah kiri dan kotak putih sebelah kanan */
+    align-items: flex-start; /* Agar konten sejajar dari atas */
+    padding: 30px;
+}
+
+/* Mengatur lebar area menu di kiri */
+.main-layout .menu {
+    flex: 0 0 500px; /* Lebar tetap sidebar menu */
+}
+
+/* Mengatur area kotak putih di kanan agar mengisi sisa layar */
+.main-layout main {
+    flex: 2 1 500px; 
+    
+
+}
+ /* Layout untuk viewport yang lebih lebar */
+ @media (min-width: 768px) {
+ }
+.menu, main {
+    width: 100%;
+}
+
+/* footer */
+footer {
+   background: linear-gradient(135deg, #5fbcf1, #21f483);
+    color: #000000;
+    text-align: center;
+    padding: 40px;
+    font-weight: bold;
+    font-size:20px;
+    
+}
+/* latar belakang */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0;width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.modal-box {
+    background: #fcf9f9;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 800px;
+    font-size: 30px;
+}
+.modal-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #acc;
+    border-radius: 8px;
+    font-size: 35px;
+}
+.modal-box button {
+    padding: 10px 20px;
+    background-color: #086bce;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 30px;
+}
+main {
+    width: 100%;
+    max-width: 100%;
+    margin: auto ;
+   
+
+}
+.content {
+    background: #0285cb;
+    padding: 90px;
+    border-radius: 30px;
+    box-shadow: 0 30px 20px rgba(0,0,0,0.5);
+    
+   
+
+
+} 
+.content h2 {
+    color: #000000;
+    margin-top: 0;
+    font-size: 60px;
+
+}
+.content p {
+    font-size: 30px;
+    font-weight: bold;
+}
+.kartu-profil {
+    background-color: #fcf9f9;
+    padding:12px;
+    border-radius: 12px;
+   box-shadow: 0 30px 20px rgba(0,0,0,0.5);
+
+}
+.kartu-profil p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #451010;
+}
+.kartu-profil em {
+    font-size: 25px;
+}
