@@ -19,8 +19,8 @@ header {
     font-size: 35px;
     font-style: italic;
     border-radius: 12px;
-    width: 100%;
-    max-width: 100%;
+    width: 900px 900px;
+    max-width: 100;
      
 
 }
@@ -91,21 +91,16 @@ header h1 {
     
 
 }
- /* Layout untuk viewport yang lebih lebar */
- @media (min-width: 768px) {
- }
-.menu, main {
-    width: 100%;
-}
+
 
 /* footer */
 footer {
    background: linear-gradient(135deg, #5fbcf1, #21f483);
     color: #000000;
     text-align: center;
-    padding: 40px;
+    padding: 50px;
     font-weight: bold;
-    font-size:20px;
+    font-size:25px;
     
 }
 /* latar belakang */
@@ -150,7 +145,7 @@ main {
    
 
 }
-.content {
+.card {
     background: #0285cb;
     padding: 90px;
     border-radius: 30px;
@@ -160,13 +155,13 @@ main {
 
 
 } 
-.content h2 {
+.card h2 {
     color: #000000;
     margin-top: 0;
     font-size: 60px;
 
 }
-.content p {
+.card p {
     font-size: 30px;
     font-weight: bold;
 }
@@ -182,6 +177,19 @@ main {
     font-weight: bold;
     color: #451010;
 }
-.kartu-profil em {
+.kartu-profil h3 {
     font-size: 25px;
+}
+@media screen and (max-width:768px){
+    .main-layoutm{
+        flex-direction: column;
+    }
+    .menu {
+        width: 100%;
+        border-radius: 20px;
+    }
+    .konten-utama {
+        width: 100%;
+    }
+
 }
