@@ -1,13 +1,14 @@
 /* pengaturan dasar halaman */
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: "segoe UI", Tahoma,Geneva,
     Verdana,
     sans-serif;
-    margin: 0%;
-    padding: 00;
+    margin: 0;
    background-color: #cff9e8;
     color: #451010;
-    width: 100%;
 }
 
 /* header website */

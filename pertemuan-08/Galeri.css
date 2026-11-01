@@ -1,0 +1,159 @@
+/* ===== Dasar ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background-color: #cff9e8;
+}
+
+/* ===== Header ===== */
+header {
+   background: linear-gradient(135deg, #0285cb, #03ffd5);
+    border-bottom: 3px solid;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    font-style: italic;
+    border-radius: 12px;
+    width: 900px 900px;
+    max-width: 100;
+    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* ===== Menu ===== */
+.menu {
+    background-color: #cff9e8;
+    border-bottom: 1px solid #d1d5db;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+}
+
+nav a {
+   display: inline-block;
+    padding: 8px 18px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    color: #060000;
+    background: linear-gradient(135deg, #0285cb, #03ffd5);
+    border: 1px solid;
+    border-radius: 8px;
+    box-shadow: 3px 3px 0 ;
+    transition: transform 0.12s, box-shadow 0.12s;
+}
+
+nav a:hover {
+    background-color: #dbeafe;
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0 ;
+    background-color: #04ffff;
+
+}
+.menu nav a[href="Profil.html"] {
+      background-color: #04ffff;
+    
+}
+
+.menu nav a:focus-visible {
+    outline: 11px dashed  #1a1a2e;
+    outline-offset: px;
+}
+
+/* ===== Konten utama ===== */
+main {
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+.galeri h2 {
+    margin-top: 0;
+    color: #1e3a8a;
+    
+}
+
+/* ===== Kartu galeri ===== */
+.card {
+    background: linear-gradient(135deg, #0285cb, #03ffd5);
+    border: 2px solid #010408;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #111827;
+}
+
+.card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    margin: 0;
+}
+
+/* ===== Footer ===== */
+footer {
+   background: linear-gradient(135deg, #5fbcf1, #21f483);
+    color: #000000;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    font-size:25px;
+    width: 100%;
+    max-width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ===== Halaman Profil (opsional) ===== */
+.profil-image-container {
+    text-align: center;
+    margin: 24px 0;
+}
+
+.profil-image-container img {
+    border-radius: 50%;
+    border: 4px solid #1e3a8a;
+}
+
+/* ===== Layar kecil (HP) ===== */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        padding: 10px 12px;
+    }
+}
