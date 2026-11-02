@@ -27,76 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontak - Maulana Firdaus</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 16px;
-      color: #222;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-    nav a { color: #4b0082; }
-    form {
-      display: grid;
-      gap: 12px;
-      max-width: 500px;
-    }
-    label { font-weight: bold; }
-    input, textarea {
-      width: 100%;
-      padding: 8px;
-      font: inherit;
-      box-sizing: border-box;
-      border: 1px solid #999;
-      border-radius: 4px;
-    }
-    button {
-      padding: 10px;
-      font: inherit;
-      background: #4b0082;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    button:hover { background: #3a0066; }
-    .pesan-status {
-      margin: 0;
-      padding: 10px;
-      border-radius: 4px;
-      display: none;
-    }
-    .pesan-status.sukses {
-      display: block;
-      background: #e6f4ea;
-      color: #137333;
-      border: 1px solid #137333;
-    }
-    .pesan-status.gagal {
-      display: block;
-      background: #fce8e6;
-      color: #c5221f;
-      border: 1px solid #c5221f;
-    }
-    iframe {
-      width: 100%;
-      height: 320px;
-      border: 0;
-    }
-    footer {
-      margin-top: 32px;
-      border-top: 1px solid #ccc;
-      padding-top: 8px;
-    }
-  </style>
+  <link rel="stylesheet" href="contact.css">
 </head>
 <body>
 

@@ -17,10 +17,10 @@
     <div class="menu">
         <nav>
             <ul>
-                <a href="index.html">My-Story</a>
-                <a href="Profil.html">My-Profil</a>
-                <a href="Galeri.html">My Gallery</a>
-                <a href="contact.html">My-Kontak</a>
+                <a href="index.php">My-Story</a>
+                <a href="Profil.php">My-Profil</a>
+                <a href="Galeri.php">My Gallery</a>
+                <a href="contact.php">My-Kontak</a>
             </ul>
         </nav>
         <!-- galeri utama -->

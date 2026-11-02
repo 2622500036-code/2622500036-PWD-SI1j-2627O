@@ -33,11 +33,11 @@
   <div class="main-layout">
     <div class="menu">
       <nav>
-        <a href="index.html">Story</a>
-        <a href="Profil.html">Profil</a>
-        <a href="Galeri.html">Gallery</a>
-        <a href="contact.html">Kontak</a>
-        <a href="pendaftaran.php"> Pendaftaran</a>
+        <a href="index.php">Story</a>
+        <a href="Profil.php">Profil</a>
+        <a href="Galeri.php">Gallery</a>
+        <a href="contact.php">Kontak</a>
+
       </nav>
     </div>
     <main class="konten-utama">

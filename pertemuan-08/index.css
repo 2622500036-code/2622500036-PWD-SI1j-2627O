@@ -1,196 +1,323 @@
-/* pengaturan dasar halaman */
+/* ===== RESET & DASAR ===== */
 * {
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-    font-family: "segoe UI", Tahoma,Geneva,
-    Verdana,
-    sans-serif;
-    margin: 0;
-   background-color: #cff9e8;
-    color: #451010;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #ccf9e8;
+  color: #1a1a1a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* header website */
+/* ===== HEADER ===== */
 header {
-    background: linear-gradient(135deg, #0285cb, #03ffd5);
-    color: #fef5f5;
-    text-align: center;
-    padding: 1%;
-    font-size: 35px;
-    font-style: italic;
-    border-radius: 12px;
-    width: 900px 900px;
-    max-width: 100;
-     
-
+  background: linear-gradient(90deg, #0081c9 0%, #00f5d4 100%);
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 3rem;
-    letter-spacing: 1px;
-   
-   
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
 }
 
-/* bagian navigasi */
-.menu{
-    width: 100%;
-    max-width:300px;
-    margin: 20px o;
-    background: linear-gradient(135deg, #0285cb, #03ffd5);
-    padding: 50px;
-    border-radius: 900px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-   
+header p {
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* ===== LAYOUT UTAMA (menu kiri + konten kanan) ===== */
+.main-layout {
+  display: flex;
+  gap: 30px;
+  padding: 30px 25px;
+  align-items: flex-start;
+  flex: 1;
+}
+
+/* ===== MENU / NAVIGASI ===== */
+.menu {
+  flex: 0 0 265px;
+  background: linear-gradient(160deg, #0099cc 0%, #00f0d0 100%);
+  border-radius: 140px;
+  padding: 40px 42px;
 }
 
 .menu nav {
-    display: flex;
-    flex-direction: column; gap: 10px;
-    
-    
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .menu nav a {
-    text-decoration:none;
-    color: #fffcfc;
-    font-weight: bold;
-    font-size: 26px;
-    padding: 30px 30px;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 900px;
-  
-
-
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding-left: 26px;
+  background: rgba(151, 54, 54, 0.12);
+  color: #fffefe;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 35px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, transform 0.2s;
 }
 
 .menu nav a:hover {
-   background-color: #04ffff;
-    color: #000000;
-    transform: translateX(10px);
-    /* efek geser ke kanan */
-}
-/* Membuat menu dan konten berjejer secara horizontal (ke samping) */
-.main-layout {
-    display: flex;
-    gap: 15px; /* Jarak antara menu sebelah kiri dan kotak putih sebelah kanan */
-    align-items: flex-start; /* Agar konten sejajar dari atas */
-    padding: 30px;
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateX(5px);
 }
 
-/* Mengatur lebar area menu di kiri */
-.main-layout .menu {
-    flex: 0 0 500px; /* Lebar tetap sidebar menu */
+/* ===== KONTEN UTAMA ===== */
+.konten-utama {
+  flex: 1;
+  min-width: 0;
 }
 
-/* Mengatur area kotak putih di kanan agar mengisi sisa layar */
-.main-layout main {
-    flex: 2 1 500px; 
-    
-
-}
-
-
-/* footer */
-footer {
-   background: linear-gradient(135deg, #5fbcf1, #21f483);
-    color: #000000;
-    text-align: center;
-    padding: 50px;
-    font-weight: bold;
-    font-size:25px;
-    
-}
-/* latar belakang */
-.modal-overlay {
-    position: fixed;
-    top: 0; left: 0;width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-.modal-box {
-    background: #fcf9f9;
-    padding: 40px;
-    border-radius: 10px;
-    text-align: center;
-    width: 800px;
-    font-size: 30px;
-}
-.modal-box input {
-    width: 100%;
-    padding: 10px;
-    margin: 20px 0;
-    border: 1px solid #acc;
-    border-radius: 8px;
-    font-size: 35px;
-}
-.modal-box button {
-    padding: 10px 20px;
-    background-color: #086bce;
-    color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 30px;
-}
-main {
-    width: 100%;
-    max-width: 100%;
-    margin: auto ;
-   
-
-}
 .card {
-    background: #0285cb;
-    padding: 90px;
-    border-radius: 30px;
-    box-shadow: 0 30px 20px rgba(0,0,0,0.5);
-    
-   
+  background: #0284c7;
+  border-radius: 35px 35px 0 0;
+  padding: 70px 75px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
 
-
-} 
 .card h2 {
-    color: #000000;
-    margin-top: 0;
-    font-size: 60px;
-
+  font-size: 1.5rem;
+  color: #111;
+  margin-bottom: 25px;
 }
+
 .card p {
-    font-size: 30px;
-    font-weight: bold;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #5a0000;
+  line-height: 1.6;
 }
+
 .kartu-profil {
-    background-color: #fcf9f9;
-    padding:12px;
-    border-radius: 12px;
-   box-shadow: 0 30px 20px rgba(0,0,0,0.5);
+  background: #fafaf8;
+  padding: 30px 12px 25px;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 12px 25px rgba(255, 0, 0, 0.35);
+}
 
-}
-.kartu-profil p {
-    font-size: 30px;
-    font-weight: bold;
-    color: #451010;
-}
 .kartu-profil h3 {
-    font-size: 25px;
+  font-size: 1.35rem;
+  color: #3a0000;
+  margin-bottom: 20px;
 }
-@media screen and (max-width:768px){
-    .main-layoutm{
-        flex-direction: column;
-    }
-    .menu {
-        width: 100%;
-        border-radius: 20px;
-    }
-    .konten-utama {
-        width: 100%;
-    }
 
+.kartu-profil p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #5a0000;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: linear-gradient(90deg, #62bdf0 0%, #22f58c 100%);
+  text-align: center;
+  padding: 65px 20px;
+  margin-bottom: 60px;
+}
+
+footer p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111;
+}
+
+/* ===== MODAL SELAMAT DATANG ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 999;
+}
+
+.modal-box {
+  background: #fff;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.modal-box h2 {
+  color: #0284c7;
+  margin-bottom: 10px;
+}
+
+.modal-box p {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.modal-box input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #0099cc;
+  border-radius: 25px;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.modal-box input:focus {
+  border-color: #00c9b0;
+}
+
+.modal-box button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #0081c9, #00f5d4);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.modal-box button:hover {
+  opacity: 0.9;
+}
+
+/* =====================================================
+   RESPONSIVE - TABLET (<= 900px)
+   ===================================================== */
+@media (max-width: 900px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1.15rem;
+  }
+
+  .main-layout {
+    gap: 20px;
+    padding: 20px 15px;
+  }
+
+  .menu {
+    flex: 0 0 200px;
+    padding: 30px 25px;
+    border-radius: 100px;
+  }
+
+  .menu nav a {
+    height: 56px;
+  }
+
+  .card {
+    padding: 40px 35px;
+  }
+}
+
+/* =====================================================
+   RESPONSIVE - HP (<= 600px)
+   ===================================================== */
+@media (max-width: 600px) {
+  header {
+    padding: 28px 15px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  /* menu pindah ke atas, jadi susunan horizontal */
+  .main-layout {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 12px;
+  }
+
+  .menu {
+    flex: none;
+    width: 100%;
+    padding: 18px 15px;
+    border-radius: 40px;
+  }
+
+  .menu nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .menu nav a {
+    flex: 1 1 calc(50% - 10px);
+    height: 46px;
+    padding-left: 0;
+    justify-content: center;
+    font-size: 0.9rem;
+  }
+
+  .menu nav a:hover {
+    transform: none;
+  }
+
+  .konten-utama {
+    width: 100%;
+  }
+
+  .card {
+    padding: 28px 20px;
+    border-radius: 25px 25px 0 0;
+  }
+
+  .card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+  }
+
+  .card p,
+  .kartu-profil p {
+    font-size: 0.92rem;
+  }
+
+  .kartu-profil {
+    padding: 22px 18px;
+  }
+
+  .kartu-profil h3 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+  }
+
+  footer {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+  }
+
+  footer p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
