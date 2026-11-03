@@ -31,9 +31,9 @@ a:hover {
 /* ===== Header (judul gradasi biru -> aqua) ===== */
 header h1 {
   margin: 0;
-  padding: 14px 10px;
+  padding: 30px;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 35px;
   font-style: italic;
   background: linear-gradient(90deg, #0288d1, #00f5d4);
   border: 1px solid #0b2a33;
@@ -54,7 +54,7 @@ nav ul {
 nav a {
   display: block;
   padding: 6px 12px;
-  font-size: 1.05rem;
+  font-size: 20px;
   color: #0b2a33;
   text-decoration: none;
   background: linear-gradient(135deg, #00b4d8, #00f5d4);
@@ -80,7 +80,7 @@ section {
 
 h2 {
   margin: 0 0 8px;
-  font-size: 1.1rem;
+  font-size: 30px;
   color: #00006b;
 }
 
@@ -171,6 +171,10 @@ footer {
   border-top: 1px solid #0b2a33;
   font-size: 0.85rem;
   text-align: center;
+  background: linear-gradient(135deg, #5fbcf1, #21f483);
+  color: #000000;
+  border: 1px solid #0b2a33;
+  border-radius: 6px;
 }
 
 /* ===== HP ===== */
