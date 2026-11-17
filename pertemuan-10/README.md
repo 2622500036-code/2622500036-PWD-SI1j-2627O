@@ -22,3 +22,5 @@ F.2. Mengenal Perintah SQL INSERT sebagai Alternatif
 data berhasil ditambahkan.muncul sesui dengan modul
 F.3. Memeriksa Data Menggunakan Fasilitas Browse 
  tab Browse sesuai dengan data yang dimasukkan 
+ G.2. Mengekspor Basis Data ke Format SQL 
+ pengeasporan berhaasil
