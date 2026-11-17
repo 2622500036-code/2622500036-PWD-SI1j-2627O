@@ -12,3 +12,7 @@ C.2. Menentukan Data yang Akan Disimpan ke Basis Data
 ---
 C.3. Menangani Field minat yang Memiliki Beberapa Pilihan 
 atribut mengunakan  name="minat[]" dan memiliki nilai HTML serta CSS
+D.1. Menentukan Nama Basis Data dan Tabel 
+nama tebeltbl_kontak_2622500036
+Nama basis data : db_pwd_2622500036
+Nama tabel      : tbl_kontak_2622500036
