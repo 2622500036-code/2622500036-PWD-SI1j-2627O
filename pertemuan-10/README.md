@@ -10,3 +10,5 @@ sesuai dengan atribut name dan jenis input yang tersedia pada kode.
  
 C.2. Menentukan Data yang Akan Disimpan ke Basis Data 
 ---
+C.3. Menangani Field minat yang Memiliki Beberapa Pilihan 
+atribut mengunakan  name="minat[]" dan memiliki nilai HTML serta CSS
