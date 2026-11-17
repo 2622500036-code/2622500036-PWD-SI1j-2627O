@@ -16,3 +16,5 @@ D.1. Menentukan Nama Basis Data dan Tabel
 nama tebeltbl_kontak_2622500036
 Nama basis data : db_pwd_2622500036
 Nama tabel      : tbl_kontak_2622500036
+F.1. Memasukkan Data Menggunakan Fasilitas Insert 
+ada 5 tipe tada yang saya masukam semua nya sesuai dengan ketentuan di modul
