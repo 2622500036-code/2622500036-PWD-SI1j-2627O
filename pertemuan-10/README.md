@@ -24,3 +24,5 @@ F.3. Memeriksa Data Menggunakan Fasilitas Browse
  tab Browse sesuai dengan data yang dimasukkan 
  G.2. Mengekspor Basis Data ke Format SQL 
  pengeasporan berhaasil
+ G.3. Memeriksa Berkas Hasil Ekspor 
+ data sama aman terpercaya kerenn 
