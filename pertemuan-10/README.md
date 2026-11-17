@@ -7,3 +7,6 @@ MySQL.
 C.1. Mengidentifikasi Data Formulir Kontak P9
 kedelapan data tersebut 
 sesuai dengan atribut name dan jenis input yang tersedia pada kode.
+ 
+C.2. Menentukan Data yang Akan Disimpan ke Basis Data 
+---
