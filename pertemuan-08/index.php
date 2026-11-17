@@ -28,6 +28,7 @@
   <header>
     <h1>--> MY STORY <-- </h1>
         <p id="salam-pengunjung"></p>
+       
   </header>
   <!-- navigasi -->
   <div class="main-layout">
