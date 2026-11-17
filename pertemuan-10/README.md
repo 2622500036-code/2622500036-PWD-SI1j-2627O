@@ -20,3 +20,5 @@ F.1. Memasukkan Data Menggunakan Fasilitas Insert
 ada 5 tipe tada yang saya masukam semua nya sesuai dengan ketentuan di modul
 F.2. Mengenal Perintah SQL INSERT sebagai Alternatif
 data berhasil ditambahkan.muncul sesui dengan modul
+F.3. Memeriksa Data Menggunakan Fasilitas Browse 
+ tab Browse sesuai dengan data yang dimasukkan 
